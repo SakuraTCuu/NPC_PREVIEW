@@ -1,0 +1,44 @@
+{
+  "name": "Aha-ai-npc-preview",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "distMac": "electron-builder --mac --x64"
+  },
+  "build": {
+    "appId": "com.npcpreview.app",
+    "copyright": "Aha",
+    "productName": "Aha-ai-npc-preview",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  },
+  "repository": "https://github.com/SakuraTCuu/NPC_PREVIEW.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^11.2.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "express": "^4.17.1"
+  }
+}

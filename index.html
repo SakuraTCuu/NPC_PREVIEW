@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ai-npc-preview</title>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+</head>
+<style>
+  html,body {
+    margin: 0;
+    height: 100%;
+  }
+
+  #btn_write:hover {
+    box-shadow: 1px 1px 20px rgba(117, 117, 117, 0.29);
+  }
+
+  /* 拖拽的区域样式 */
+  .holder {
+    height: 100%;
+    /* min-height: 200px; */
+    background: #eee;
+    margin: 2em;
+    padding: 1em;
+    border: 0px dotted #eee;
+    border-radius: 10px;
+    transition: .3s all ease-in-out;
+  }
+
+  /* 拖拽时用jQuery为其添加边框样式的class */
+  .holder-ondrag {
+    border: 20px dotted #d45700;
+  }
+</style>
+
+<body>
+
+  <!-- <button id="" type="button">清除缓存</button> -->
+
+  <div id="holder" class="holder">
+    请拖入龙骨文件夹
+  </div>
+
+</body>
+
+<script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+</script>
+
+</html>
